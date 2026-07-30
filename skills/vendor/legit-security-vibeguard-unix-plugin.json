@@ -1,0 +1,11 @@
+{
+  "name": "vibeguard-unix",
+  "description": "AI Guard for Claude Code on macOS and Linux — protects against secrets leakage, prompt injection, hidden characters, and enforces MCP allow lists",
+  "version": "0.1.245",
+  "author": {
+    "name": "Legit Security",
+    "email": "support@legitsecurity.com"
+  },
+  "homepage": "https://www.legitsecurity.com",
+  "license": "Proprietary"
+}

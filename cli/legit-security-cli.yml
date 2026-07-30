@@ -1,0 +1,79 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Legit-Labs/legitify
+clis:
+- name: legit
+  description: First-party Legit Security CLI for scanning code — secrets, SCA and SAST.
+  version: 1.0.78
+  license: proprietary
+  homepage: https://www.legitsecurity.com
+  install:
+  - method: homebrew
+    command: brew install Legit-Labs/legit-labs/legit
+  - method: archive
+    command: >-
+      download legit_<version>_<os>_<arch>.tar.gz from
+      https://legit-cli.s3.amazonaws.com/legit/v<version>/
+  - method: bundled
+    command: shipped inside the vibeguard Claude Code plugin (plugins/vibeguard-*/bin/legit-*)
+  commands:
+  - name: auth
+    summary: Authenticate the CLI against your Legit Security account.
+    source: https://github.com/Legit-Labs/claude-marketplace#installation
+  - name: version
+    summary: Print the CLI version.
+    source: https://github.com/Legit-Labs/homebrew-legit-labs/blob/main/legit.rb
+  notes: >-
+    The full `legit` command surface is documented in the authenticated Legit
+    Security customer documentation; only the commands verified in public
+    sources (the Homebrew formula test block and the Claude Code plugin README)
+    are recorded here. No commands were inferred.
+- name: legitify
+  description: >-
+    Open source scanner that detects and remediates misconfigurations and
+    security risks across GitHub and GitLab assets.
+  license: Apache-2.0
+  homepage: https://legitify.dev
+  repository: https://github.com/Legit-Labs/legitify
+  install:
+  - method: homebrew
+    command: brew install legitify
+  - method: source
+    command: git clone git@github.com:Legit-Labs/legitify.git && go run main.go analyze
+  - method: github-cli
+    command: gh extension install legit-labs/gh-legitify && gh legitify
+  - method: release-binary
+    command: download from https://github.com/Legit-Labs/legitify/releases
+  auth:
+    env: SCM_TOKEN
+    summary: GitHub or GitLab personal access token supplied via the SCM_TOKEN environment variable.
+  commands:
+  - name: analyze
+    summary: Analyze SCM organization/repository configuration against built-in policies.
+    example: SCM_TOKEN=<your_token> legitify analyze
+    flags:
+    - name: --org
+      summary: Limit analysis to the specified organizations.
+    - name: --namespace
+      summary: >-
+        Filter by resource type — organization, member, repository, actions,
+        runner_group.
+    - name: --output-format
+      summary: human-readable (default), json, or sarif.
+    - name: --scorecard
+      summary: Run OSSF Scorecard checks — yes / no / verbose.
+    - name: --failed-only
+      summary: Show only policy violations.
+    - name: --ignore-policies-path
+      summary: Path to a file listing policies to skip.
+  - name: gpt-analysis
+    summary: AI-assisted analysis of the resulting security posture.
+  scm_support:
+  - GitHub Cloud
+  - GitHub Enterprise Server
+  - GitLab Cloud
+  - GitLab Server
+  output_formats:
+  - human-readable
+  - json
+  - sarif

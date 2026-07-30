@@ -1,0 +1,59 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Legit-Labs/legitify/releases
+scope: >-
+  Open source tooling only. Legit Security publishes no public changelog or
+  release-notes page for the ASPM platform itself (www.legitsecurity.com/changelog
+  and /release-notes both 404); platform release notes sit behind the customer
+  portal. The dated release history below is the public GitHub release feed for
+  the legitify scanner.
+components:
+- component: legitify
+  repository: https://github.com/Legit-Labs/legitify
+  scheme: semver
+  current_version: v1.0.11
+  feed: https://github.com/Legit-Labs/legitify/releases.atom
+  entries:
+  - version: v1.0.11
+    date: '2024-07-09'
+    breaking: false
+    highlights: Release binaries for linux/darwin amd64 + arm64.
+  - version: v1.0.10
+    date: '2024-06-13'
+    breaking: false
+    highlights: Release binaries for linux/darwin amd64 + arm64.
+  - version: v1.0.9
+    date: '2024-06-11'
+    breaking: false
+    highlights: Release binaries for linux/darwin amd64 + arm64.
+  - version: v1.0.8
+    date: '2024-05-21'
+    breaking: false
+    highlights: Release binaries for linux/darwin amd64 + arm64.
+  - version: v1.0.7
+    date: '2023-12-11'
+    breaking: false
+    highlights: Release binaries for linux/darwin amd64 + arm64.
+  - version: v1.0.6
+    date: '2023-12-10'
+    breaking: false
+    highlights: >-
+      Members without last-active permission are ignored rather than removed.
+  - version: v1.0.5
+    date: '2023-12-04'
+    breaking: false
+    highlights: Markdown output format; GitHub fixes; script cleanup.
+- component: vibeguard (Claude Code plugin)
+  repository: https://github.com/Legit-Labs/claude-marketplace
+  scheme: semver
+  current_version: 0.1.245
+  entries: []
+  notes: >-
+    Version is read from .claude-plugin/marketplace.json; the repository
+    publishes no dated release entries.
+- component: legit CLI
+  scheme: semver
+  current_version: 1.0.78
+  source: https://github.com/Legit-Labs/homebrew-legit-labs/blob/main/legit.rb
+  entries: []
+  notes: Version read from the Homebrew formula; no public dated release notes.

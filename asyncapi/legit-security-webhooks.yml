@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.legitsecurity.com/integrations
+spec_type: none
+type: Webhooks
+summary: >-
+  Legit Security publishes outbound Webhook delivery as a first-class
+  integration in its Ticketing & Alerting family, alongside Jira, ServiceNow,
+  Slack, Microsoft Teams, Asana, Shortcut, Torq, Azure Boards and GitLab
+  Issues. The platform is described as architected to enable custom
+  integrations, with webhooks as the generic transport.
+webhooks:
+- name: Webhook
+  category: Ticketing & Alerting
+  direction: outbound
+  url: https://www.legitsecurity.com/integrations
+  description: >-
+    Generic outbound webhook notification target for Legit findings and alerts,
+    used for custom integrations with systems Legit does not integrate with
+    natively.
+events: []
+asyncapi: null
+notes: >-
+  No AsyncAPI document is published on any Legit Security host, and the event
+  names, payload schemas, delivery semantics, retry policy and signature scheme
+  live in the authenticated customer documentation. events[] is left empty
+  rather than invented. This artifact records only the publicly verifiable fact
+  that a webhook surface exists.

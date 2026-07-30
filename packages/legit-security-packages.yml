@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Legit-Labs
+notes: >-
+  Legit Security publishes command-line tooling and a Claude Code plugin, not
+  server-side API client SDKs. No first-party client library was found on npm,
+  PyPI, Maven Central, NuGet, RubyGems, Packagist or crates.io for the Legit
+  Security platform API, which is documented behind an authenticated customer
+  portal. Everything below was verified on its registry / repository.
+packages:
+- language: shell
+  registry: homebrew
+  name: legit
+  tap: Legit-Labs/legit-labs
+  url: https://github.com/Legit-Labs/homebrew-legit-labs/blob/main/legit.rb
+  install: brew install Legit-Labs/legit-labs/legit
+  version: 1.0.78
+  description: CLI tool for scanning code with Legit Security - secrets, SCA, and SAST
+  license: proprietary
+  official: true
+- language: go
+  registry: homebrew
+  name: legitify
+  tap: Legit-Labs/legit-labs
+  url: https://github.com/Legit-Labs/homebrew-legit-labs/blob/main/legitify.rb
+  install: brew install legitify
+  description: Open source SCM (GitHub/GitLab) misconfiguration scanner
+  license: Apache-2.0
+  official: true
+- language: go
+  registry: github
+  name: github.com/Legit-Labs/legitify
+  url: https://github.com/Legit-Labs/legitify
+  install: git clone git@github.com:Legit-Labs/legitify.git && go run main.go analyze
+  homepage: https://legitify.dev
+  license: Apache-2.0
+  official: true
+- language: shell
+  registry: github-cli-extension
+  name: legit-labs/gh-legitify
+  url: https://github.com/Legit-Labs/gh-legitify
+  install: gh extension install legit-labs/gh-legitify
+  description: GitHub CLI extension for running legitify
+  official: true
+- language: shell
+  registry: claude-code-plugin-marketplace
+  name: vibeguard
+  url: https://github.com/Legit-Labs/claude-marketplace
+  install: /plugin marketplace add Legit-Labs/claude-marketplace && /plugin install vibeguard@legit-labs-claude-marketplace
+  version: 0.1.245
+  description: >-
+    AI Guard for Claude Code — protects against secrets leakage, prompt injection,
+    hidden characters, and enforces MCP allow lists (vibeguard-unix and
+    vibeguard-windows variants)
+  license: proprietary
+  official: true

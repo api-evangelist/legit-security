@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Legit-Labs
+notes: >-
+  Legit Security publishes no OpenAPI on the open web, so no skills were
+  generated against API operations. Both skills below are grounded entirely in
+  provider-published command surfaces (the Claude Code plugin repo and the
+  legitify README); the vendor plugin manifests are saved verbatim under
+  skills/vendor/.
+skills:
+- file: legit-security-vibeguard-ai-guard.md
+  name: Install and run Legit VibeGuard (AI Guard) in Claude Code
+  api: null
+  source: https://github.com/Legit-Labs/claude-marketplace
+  operations: []
+- file: legit-security-legitify-scm-audit.md
+  name: Audit GitHub/GitLab posture with legitify
+  api: null
+  source: https://github.com/Legit-Labs/legitify
+  operations: []
+vendor_artifacts:
+- file: vendor/legit-security-claude-marketplace.json
+  source: https://github.com/Legit-Labs/claude-marketplace/blob/main/.claude-plugin/marketplace.json
+- file: vendor/legit-security-vibeguard-unix-plugin.json
+  source: https://github.com/Legit-Labs/claude-marketplace/blob/main/plugins/vibeguard-unix/.claude-plugin/plugin.json
+- file: vendor/legit-security-vibeguard-unix-hooks.json
+  source: https://github.com/Legit-Labs/claude-marketplace/blob/main/plugins/vibeguard-unix/hooks/hooks.json

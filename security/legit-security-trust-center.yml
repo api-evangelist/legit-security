@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+url: https://trust.legitsecurity.com/
+platform: Scytale (trustcenter.scytale.ai)
+mirror: https://trustcenter.scytale.ai/legitsecurity
+certifications: []
+evidence:
+- source: https://trust.legitsecurity.com/
+  status: 200
+  kind: trust-center
+  detail: >-
+    Page title "Trust Center"; served from a Scytale-hosted single-page app
+    (api.scytale.ai / trustcenter.scytale.ai). Verified reachable 2026-07-19.
+- source: https://trustcenter.scytale.ai/legitsecurity
+  status: 200
+  kind: trust-center-mirror
+notes: >-
+  The trust center is client-rendered and gates its document/certification list
+  behind the SPA, so no named certifications could be verified from the public
+  HTML or bundle. certifications[] is deliberately empty rather than guessed —
+  no Compliance pointer is emitted until a certification is verified.

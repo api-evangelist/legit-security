@@ -1,0 +1,38 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTP probes 2026-07-19
+summary: >-
+  No /.well-known/ discovery documents are published on any Legit Security host.
+  The marketing host returns 404 for every probed path; the application hosts
+  (app./api.legitsecurity.co) are single-page apps whose catch-all route answers
+  200 for any path by redirecting to /app, so those 200s are soft-404s and not
+  well-known documents.
+hosts:
+- host: https://www.legitsecurity.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://app.legitsecurity.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft-404 — redirected to https://app.legitsecurity.co/app (SPA shell)
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-404 — redirected to https://app.legitsecurity.co/app (SPA shell)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft-404 — redirected to https://app.legitsecurity.co/app (SPA shell)
+- host: https://api.legitsecurity.co
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-404 — redirected to https://api.legitsecurity.co/app (SPA shell)

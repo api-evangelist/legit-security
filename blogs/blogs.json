@@ -1,0 +1,28 @@
+{
+  "repo": "legit-security",
+  "feeds": [
+    {
+      "source": "https://www.legitsecurity.co/app/login",
+      "feed_url": "https://www.legitsecurity.co/app/login",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.legitsecurity.com/blog/rss.xml",
+      "feed_url": "https://www.legitsecurity.com/blog/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://www.legitsecurity.com/blog",
+      "feed_url": "https://www.legitsecurity.com/blog/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-07-25T15:00:33Z"
+}

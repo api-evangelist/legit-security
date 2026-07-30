@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://www.legitsecurity.com/legit-mcp-server-ai-native-security-intelligence-for-developers
+server:
+  name: Legit MCP Server
+  vendor: Legit Security
+  summary: >-
+    Delivers Legit Security application security intelligence directly into the
+    AI code assistants developers use daily, combining SAST and SCA data into a
+    single context-aware intelligence layer.
+  transport: unpublished
+  url: null
+  auth: >-
+    Requires a Legit Security account; connection/credential details are
+    published in the authenticated customer documentation, not publicly.
+clients:
+- Cursor
+- GitHub Copilot
+- Claude Code
+- Windsurf
+capabilities:
+- id: real-time-scanning
+  description: Detect vulnerabilities and policy violations as AI assistants generate code.
+- id: natural-language-security-queries
+  description: Ask natural-language security questions against Legit findings.
+- id: unified-sast-sca-context
+  description: Combine SAST and SCA data into a single, context-aware intelligence layer.
+- id: automated-remediation
+  description: Return actionable fixes developers can apply immediately.
+- id: policy-enforcement
+  description: Enforce organization-wide AI and AppSec policies automatically.
+tools: []
+notes: >-
+  Legit publicly announces the MCP server and its capabilities but does not
+  publish the endpoint, transport, or tool manifest on the open web. No tool
+  list was derived — this repo holds no OpenAPI to ground one in, and nothing
+  was invented. Related agent-facing surface: the VibeGuard / AI Guard Claude
+  Code plugin (see skills/) enforces an MCP allow list on the client side.
+related:
+- https://github.com/Legit-Labs/claude-marketplace
+- https://www.legitsecurity.com/security-governance-for-ai-generated-code-legit-vibeguard
