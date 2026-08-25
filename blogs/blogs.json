@@ -6,8 +6,7 @@
       "feed_url": "https://www.legitsecurity.co/app/login",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     },
     {
       "source": "https://www.legitsecurity.com/blog/rss.xml",
@@ -24,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 11,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 12,
+  "fetched": "2026-08-22T20:20:02Z"
 }
