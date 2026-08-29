@@ -17,6 +17,17 @@ description: 'Legit Security is an AI-native Application Security Posture Manage
   including outbound webhook notifications for custom integrations. Backed by Bessemer
   Venture Partners and CRV.'
 url: https://raw.githubusercontent.com/api-evangelist/legit-security/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
