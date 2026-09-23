@@ -1,0 +1,36 @@
+# Front Door AI Index — legit-security — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: legit-security
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.legitsecurity.com
+  final_host: www.legitsecurity.com
+  ownership: own
+  owner: legit-security
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 160
+  host_score: 160
+  density: 40.69
+  words: 3932
+  tiers:
+    agentic: 24
+    core: 133
+    model: 3
+  ambiguous: 14
+  top_terms:
+    AI: 125
+    agent: 9
+    agentic: 9
+    AI agent: 6
+    MCP: 5
+    automation: 5
+    LLMs: 4
+    Claude: 3
+    copilot: 3
+    gen ai: 2
+    large language model: 2
+    AI assistant: 1
