@@ -3,9 +3,13 @@ method: searched
 checked:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 - https://azuremarketplace.microsoft.com/
+- https://cyclonedx.org/tool-center/
 - https://focus.finops.org/data-generators/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
+- https://raw.githubusercontent.com/ossf/ossf-landscape/0c5085851606608158f3adb796e5c22265ee174d/landscape.yml
+- https://spdx.dev/use/spdx-tools/
+- https://www.openchainproject.org/community-of-conformance
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -71,5 +75,36 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: OpenSSF (Open Source Security Foundation)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  category: Open source security foundation membership
+  evidence: https://github.com/ossf/ossf-landscape/blob/0c5085851606608158f3adb796e5c22265ee174d/landscape.yml
+  contract_reference:
+    register: OpenSSF Landscape (github.com/ossf/ossf-landscape landscape.yml @0c50858516), OpenSSF Members
+    standard: OpenSSF
+    spec_file: null
+    role: openssf-member (General)
+    registered_name: Legit Security
+    website: https://legitsecurity.com/
+    matched_domain: legitsecurity.com
+    matched_by: domain
+    member_tier: General
+    in_market_tags:
+    - application-security
+    - aspm
+    - cybersecurity
+    - devsecops
+    - sast
+    signal_note: 'participation only: foundation membership is standard-participant evidence, never depth; the tier
+      is context. Members outside the market''s business are held (out-of-market)'
+    detected_by: sweep-software-supply-chain.py
+    detected: '2026-10-18'
+  detected_by: sweep-software-supply-chain.py
+  first_seen: '2026-10-18'
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml

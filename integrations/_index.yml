@@ -60,3 +60,34 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: legit-security-openssf-open-source-security-foundation
+  label: OpenSSF (Open Source Security Foundation)
+  partner_name: OpenSSF (Open Source Security Foundation)
+  category: Open source security foundation membership
+  type: register
+  channel: standard-directory
+  evidence: https://github.com/ossf/ossf-landscape/blob/0c5085851606608158f3adb796e5c22265ee174d/landscape.yml
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: OpenSSF Landscape (github.com/ossf/ossf-landscape landscape.yml @0c50858516), OpenSSF Members
+    standard: OpenSSF
+    spec_file: null
+    role: openssf-member (General)
+    registered_name: Legit Security
+    website: https://legitsecurity.com/
+    matched_domain: legitsecurity.com
+    matched_by: domain
+    member_tier: General
+    in_market_tags:
+    - application-security
+    - aspm
+    - cybersecurity
+    - devsecops
+    - sast
+    signal_note: 'participation only: foundation membership is standard-participant evidence, never depth; the tier
+      is context. Members outside the market''s business are held (out-of-market)'
+    detected_by: sweep-software-supply-chain.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
