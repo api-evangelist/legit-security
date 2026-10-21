@@ -91,3 +91,31 @@
     detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
+- slug: legit-security-cisa-secure-by-design-pledge
+  label: CISA Secure by Design Pledge
+  partner_name: CISA Secure by Design Pledge
+  category: secure-by-design software pledge
+  type: register
+  channel: standard-directory
+  evidence: https://www.cisa.gov/securebydesign/pledge/secure-design-pledge-signers
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CISA Secure by Design Pledge signers (cisa.gov/securebydesign/pledge)
+    standard: 'CISA Secure by Design Pledge (seven goals: MFA, default passwords, vulnerability classes, patches,
+      disclosure policy, CVEs, evidence of intrusions)'
+    spec_file: null
+    role: secure-by-design-pledge-signer
+    registered_name: Legit Security
+    matched_domain: null
+    matched_by: register-name
+    signal_note: 'participation only: a voluntary public pledge listed by CISA; not an audit or conformance result
+      (no certified_products, no tier)'
+    detected_by: sweep-cloud-security-star.py
+    detected: '2026-10-20'
+    register_name_note: register-name 'legitsecurity' = legit-security; no wikidata P856
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
