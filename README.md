@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Legit Security is a company surfaced as a portfolio company of bessemer-venture-partners, crv and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Legit Security is an AI-native Application Security Posture Management (ASPM) platform that gives security and engineering teams a unified view of everything being built across the software factory — source code management, CI/CD pipelines, artifact registries, cloud platforms and AI coding assistants — then discovers, correlates, prioritizes and helps remediate application security findings from that one place. The platform spans code security (SAST and SCA), enterprise secrets detection and prevention, software supply chain security, advanced code change management, and continuous compliance and SBOM. Legit also ships an agent-facing surface: the Legit MCP Server, which delivers security intelligence into AI code assistants such as Cursor, GitHub Copilot, Claude Code and Windsurf, and VibeGuard / AI Guard, a Claude Code plugin that blocks secrets leakage, prompt injection, hidden characters and disallowed MCP tools in real time. The company also maintains the open source legitify scanner for GitHub and GitLab misconfiguration detection. Legit Security integrates with more than 100 AppSec, SCM, CI, registry, cloud, identity and ticketing tools, including outbound webhook notifications for custom integrations. Backed by Bessemer Venture Partners and CRV.
 
-Backed by: bessemer-venture-partners, crv — https://www.legitsecurity.com/
+**Areas:** Company · Cybersecurity · Application Security · ASPM · DevSecOps · Software Supply Chain Security · Secrets Detection · SAST · Software Composition Analysis · Compliance · AI Security · MCP
+
+## Legit Security on APIs.io
+
+Everything profiled for Legit Security is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/legit-security/](https://apis.io/providers/legit-security/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Legit Security Webhooks](https://apis.io/asyncapis/legit-security/legit-security-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Legit MCP Server](https://apis.io/servers/legit-security/legit-mcp-server/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Legit Security Domain Security](https://apis.io/security/legit-security/legit-security-domain-security/)
+- [Legit Security Trust Center](https://apis.io/security/legit-security/legit-security-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.legitsecurity.com/)
+- [Blog](https://www.legitsecurity.com/blog)
+- [Terms of service](https://www.legitsecurity.com/terms-of-use)
+- [Privacy policy](https://www.legitsecurity.com/privacy-policy)
+- [GitHub](https://github.com/Legit-Labs)
+
+## API Evangelist rating
+
+**Kin Score 30.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.0 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 35.5 |
+
+**Agent readiness 24.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/legit-security/](https://apis.io/providers/legit-security/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Legit Security: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/legit-security/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
